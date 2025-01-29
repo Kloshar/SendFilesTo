@@ -304,8 +304,8 @@ namespace SendFiles2
                 case "yandex.ru":
                     {
                         //присваиваем значения переменным id и secret
-                        client_id = "a66a4ac773854c0182426823ded214cd";
-                        client_secret = "b0ce7014f1534f4d88fbd017db2acb72";
+                        client_id = "a66a4ac773854c0182426823ded586cd";
+                        client_secret = "b0ce7014f1534f4d88fbd534db2acb85";
 
                         //ссылка для перенаправления пользователя на авторизацию
                         access_reference = @"https://oauth.yandex.ru/authorize?" + "response_type=code" + "&client_id=" + client_id;
@@ -362,8 +362,8 @@ namespace SendFiles2
                         string ApplicationName = "SendFiles2";
 
                         //присваиваем значения переменным id и secret
-                        client_id = "587932262187-b1k12m50784nj7sl49sk9pc30an4a81p.apps.googleusercontent.com";
-                        client_secret = "PO-6Wyjvf3ry7AII6nz3m3Gb";
+                        client_id = "587932262187-b1k12m50784nj7sl49sk9pc30an4a59p.apps.googleusercontent.com";
+                        client_secret = "PO-6Wyjvf3ry7AII8nz5m7Gb";
 
                         // Переменная, описывающая id и большой секрет
                         ClientSecrets secr = new ClientSecrets { ClientId = client_id, ClientSecret = client_secret };
@@ -482,8 +482,8 @@ namespace SendFiles2
                          То есть токен получить можно, но письмо по нему не будет отправлено.
                          */
                         //присваиваем значения переменным id и secret
-                        client_id = "dj0yJmk9RFJ0ZUhqeWVhTTBEJmQ9WVdrOVQxUkxWVXRuZVdFbWNHbzlNQT09JnM9Y29uc3VtZXJzZWNyZXQmc3Y9MCZ4PTVl";
-                        client_secret = "7f77e19b9ae6a46bd445517f6db58344ec66930e";
+                        client_id = "dj0yJmk9RFJ0ZUhqeWVhTTBEJmQ3WVdrOVQxUkxWVXRuZVdFbWNHbzlNQT09JnM9Y29uc9VtZXJzZWNyZXQmc3Y9MCZ5PTVl";
+                        client_secret = "7f77e19b9ae6a46bd445517f6db58344ec66876e";
 
                         //ссылка для перенаправления пользователя на авторизацию
                         access_reference = @"https://api.login.yahoo.com/oauth2/request_auth?" + "client_id=" + client_id + "&redirect_uri=oob" + "&response_type=code" + "&language=en-us";
@@ -536,8 +536,8 @@ namespace SendFiles2
                         То есть токен получить можно, но письмо по нему не будет отправлено.
                         */
                         //присваиваем значения переменным id и secret
-                        client_id = "784997";
-                        client_secret = "2ac3e6da417a9b53a135e42ced085fe3";
+                        client_id = "784895";
+                        client_secret = "2ac3e6da417a9b53a135e42ced197fe3";
 
                         //ссылка для перенаправления пользователя на авторизацию
                         access_reference = @"https://connect.mail.ru/oauth/authorize?" + "&client_id=" + client_id + "&response_type=token";
