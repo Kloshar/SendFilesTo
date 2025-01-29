@@ -35,8 +35,8 @@ namespace SendFiles2
             if(provider == "yandex.ru")
             {
                 //присваиваем значения переменным id и secret
-                client_id = "d85a4ac773854c0182426823ded235lk";
-                client_secret = "dfr44ac773854c0182426823ded228hy";
+                client_id = "d85a4ac773854c0182426823ded128lk";
+                client_secret = "dfr44ac773854c0182426823ded564hy";
 
                 //ссылка для перенаправления пользователя на авторизацию
                 access_reference = @"https://oauth.yandex.ru/authorize?" + "response_type=code" + "&client_id=" + client_id;
