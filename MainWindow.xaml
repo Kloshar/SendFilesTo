@@ -1,0 +1,36 @@
+﻿<Window x:Name="FirstWindow" x:Class="SendFiles2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SendFiles2"
+        mc:Ignorable="d"
+        Title="SendFiles2" Height="450" Width="800" Closing="FirstWindow_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="305*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"></RowDefinition>
+            <RowDefinition Height="73*"></RowDefinition>
+            <RowDefinition Height="7*"></RowDefinition>
+            <RowDefinition Height="10*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Label VerticalAlignment="Center" HorizontalAlignment="Left">Электронный адрес отправителя: </Label>
+            <TextBox x:Name="textbox_from" Width="400" VerticalAlignment="Center" ToolTip="Поддерживается только Yandex.ru"></TextBox>
+        </StackPanel>
+        
+        <ListBox x:Name="addressesList" Grid.Row="1" Margin="5" KeyUp="addressesList_KeyUp" />
+        
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button x:Name="button_send" Visibility="Hidden" Content="Отправить" Width="100" Click="button_send_Click" Height="29" VerticalAlignment="Top" />
+            <TextBox x:Name="addressBox" ToolTip="Введите адрес электронной почты и нажмите кнопку Добавить" TextWrapping="Wrap" Text="" Width="400" Margin="5"/>
+            <Button x:Name="button_add" Content="Добавить" Width="100" Click="button_add_Click"/>
+        </StackPanel>
+        
+        <CheckBox x:Name="checkBox_integrate" Grid.Row="3" Content="Встроить в проводник" HorizontalAlignment="Center" Margin="5" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"/>
+        
+    </Grid>
+</Window>
